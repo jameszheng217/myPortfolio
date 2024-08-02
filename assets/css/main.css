@@ -15,6 +15,44 @@
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
+
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --background-color: #181a1b;
+  --default-color: #e0e0e0;
+  --heading-color: #f5f5f5;
+  --accent-color: #1e90ff;
+  --surface-color: #2c2c2c;
+  --contrast-color: #000000;
+}
+
+/* Light Theme */
+.light-background {
+  background-color: #f9f9f9; /* Light background color */
+  color: #333; /* Dark text color for readability */
+}
+
+.light-background h2 {
+  color: #000; /* Dark color for section titles in light theme */
+}
+
+/* Dark Theme */
+[data-theme="dark"] .light-background {
+  background-color: #333; /* Dark background color */
+  color: #f1f1f1; /* Light text color for readability */
+}
+
+[data-theme="dark"] .light-background h2 {
+  color: #e0e0e0; /* Light color for section titles in dark theme */
+}
+
+/* Dark Theme */
+[data-theme="dark"] .testimonial-item p {
+  color: #333; /* Light text color for dark theme */
+}
+
+
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #a8a9b4;  /* The default color of the main navmenu links */
@@ -73,58 +111,6 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
-}
-
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /*--------------------------------------------------------------
