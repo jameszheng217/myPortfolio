@@ -820,8 +820,9 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+            <form action="https://api.web3forms.com/submit" method="post" class="php-email-form" data-aos="fade-up"
               data-aos-delay="200">
+              <input type="hidden" name="access_key" value="61139b40-a173-442e-940b-da5d6657cb4b">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -847,18 +848,17 @@
                   <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
                 </div>
 
+                <div class="captcha-container">
+                  <div class="h-captcha" data-captcha="true"></div>
+                </div>
+             
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
                   <button type="submit">Send Message</button>
                 </div>
 
               </div>
             </form>
           </div><!-- End Contact Form -->
-
         </div>
       </div>
 
@@ -901,6 +901,10 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Captcha JS File -->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
 
 </body>
 
