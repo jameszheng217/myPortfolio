@@ -234,6 +234,37 @@
     });
   });
 
+  /**
+   * Active theme preferences
+   */
+  // Function to apply the selected theme and save it to localStorage
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme); // Save theme preference in localStorage
+  }
+
+  // Initialize theme on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme') || 'light'; // Default to light if no theme is saved
+    applyTheme(savedTheme);
+
+    // Set the correct radio button based on the saved theme
+    if (savedTheme === 'dark') {
+      document.getElementById('dark-theme-radio').checked = true;
+    } else {
+      document.getElementById('light-theme-radio').checked = true;
+    }
+  });
+
+  // Event listeners for theme toggling
+  document.getElementById('light-theme-radio').addEventListener('change', () => {
+    applyTheme('light');
+  });
+
+  document.getElementById('dark-theme-radio').addEventListener('change', () => {
+    applyTheme('dark');
+  });
+  
 
 
 

@@ -15,63 +15,6 @@
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
-/* Dark Theme */
-[data-theme="dark"] {
-  --background-color: #181a1b;
-  --default-color: #e0e0e0;
-  --heading-color: #f5f5f5;
-  --accent-color: #1e90ff;
-  --surface-color: #2c2c2c;
-  --contrast-color: #000000;
-}
-
-/* Light Theme */
-.light-background {
-  background-color: #f9f9f9; /* Light background color */
-  color: #333; /* Dark text color for readability */
-}
-
-.light-background h2 {
-  color: #000; /* Dark color for section titles in light theme */
-}
-
-/* Dark Theme */
-[data-theme="dark"] .light-background {
-  background-color: #333; /* Dark background color */
-  color: #f1f1f1; /* Light text color for readability */
-}
-
-[data-theme="dark"] .light-background h2 {
-  color: #e0e0e0; /* Light color for section titles in dark theme */
-}
-
-/* Dark Theme */
-[data-theme="dark"] .testimonial-item p {
-  color: #333; /* Light text color for dark theme */
-}
-
-#light-theme,
-#dark-theme {
-  cursor: pointer;
-}
-
-.captcha-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-
-
-
-
-
-
-
-
-
-
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #a8a9b4;  /* The default color of the main navmenu links */
@@ -642,39 +585,6 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Stats Section
---------------------------------------------------------------*/
-.stats .stats-item {
-  padding: 30px;
-  width: 100%;
-}
-
-.stats .stats-item i {
-  color: var(--accent-color);
-  display: block;
-  font-size: 44px;
-  float: left;
-  line-height: 0;
-}
-
-.stats .stats-item .purecounter {
-  color: var(--heading-color);
-  font-size: 48px;
-  line-height: 40px;
-  display: block;
-  font-weight: 700;
-  margin-left: 60px;
-}
-
-.stats .stats-item p {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
-  font-family: var(--heading-font);
-  font-size: 14px;
-}
-
-/*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
 .skills .progress {
@@ -1196,66 +1106,79 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Service Details Section
+# Additional Functionalities
 --------------------------------------------------------------*/
-.service-details .services-list {
-  padding: 10px 30px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  margin-bottom: 20px;
+/* Dark Theme */
+[data-theme="dark"] {
+  --background-color: #181a1b;
+  --default-color: #e0e0e0;
+  --heading-color: #f5f5f5;
+  --accent-color: #1e90ff;
+  --surface-color: #2c2c2c;
+  --contrast-color: #000000;
 }
 
-.service-details .services-list a {
-  display: block;
-  line-height: 1;
-  padding: 8px 0 8px 15px;
-  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
-  margin: 20px 0;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  transition: 0.3s;
+/* Light Theme */
+.light-background {
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-.service-details .services-list a.active {
-  color: var(--heading-color);
-  font-weight: 700;
-  border-color: var(--accent-color);
+.light-background h2 {
+  color: #000;
 }
 
-.service-details .services-list a:hover {
-  border-color: var(--accent-color);
+/* Dark Theme Overrides */
+[data-theme="dark"] .light-background {
+  background-color: #333;
+  color: #f1f1f1;
 }
 
-.service-details .services-img {
-  margin-bottom: 20px;
+[data-theme="dark"] .light-background h2 {
+  color: #e0e0e0;
 }
 
-.service-details h3 {
-  font-size: 26px;
-  font-weight: 700;
+[data-theme="dark"] .testimonial-item p {
+  color: #333;
 }
 
-.service-details h4 {
-  font-size: 20px;
-  font-weight: 700;
+/* Cursor Styles */
+#light-theme,
+#dark-theme,
+.toggle-dropdown {
+  cursor: pointer;
 }
 
-.service-details p {
-  font-size: 15px;
-}
-
-.service-details ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.service-details ul li {
-  padding: 5px 0;
+/* Dropdown Menu Styles */
+.captcha-container {
   display: flex;
+  justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
-.service-details ul i {
-  font-size: 20px;
-  margin-right: 8px;
+/* Radio Button Styles */
+input[type="radio"] {
+  display: none;
+}
+
+/* Label Styles */
+ul li label {
+  cursor: pointer;
+  padding: 5px 10px;
+  display: block;
+}
+
+/* Highlight Active Theme */
+input[type="radio"]:checked + label {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+/* Ensure consistent styling */
+#light-theme-radio:checked ~ .theme-settings #light-theme-radio + label,
+#dark-theme-radio:checked ~ .theme-settings #dark-theme-radio + label {
   color: var(--accent-color);
 }
+
+
