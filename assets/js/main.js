@@ -218,20 +218,31 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
-})();
-
-
-document.addEventListener('DOMContentLoaded', () => {
+  /**
+   * Toggle Light and Dark theme
+   */
+  document.addEventListener('DOMContentLoaded', () => {
     const lightThemeButton = document.getElementById('light-theme');
     const darkThemeButton = document.getElementById('dark-theme');
-
+  
     lightThemeButton.addEventListener('click', () => {
       document.documentElement.setAttribute('data-theme', 'light');
     });
-
+  
     darkThemeButton.addEventListener('click', () => {
       document.documentElement.setAttribute('data-theme', 'dark');
     });
   });
+
+
+
+
+})();
+
+
+
+
+
+
 
 

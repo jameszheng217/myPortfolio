@@ -15,8 +15,6 @@
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
-
-
 /* Dark Theme */
 [data-theme="dark"] {
   --background-color: #181a1b;
@@ -51,6 +49,27 @@
 [data-theme="dark"] .testimonial-item p {
   color: #333; /* Light text color for dark theme */
 }
+
+#light-theme,
+#dark-theme {
+  cursor: pointer;
+}
+
+.captcha-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
