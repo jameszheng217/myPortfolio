@@ -244,26 +244,8 @@
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme); // Save theme preference in localStorage
-
-    // Update captcha theme after applying the theme
-    updateCaptchaTheme(theme);
   }
-
-  // Function to update the visibility of h-captcha elements based on the theme
-  function updateCaptchaTheme(theme) {
-    const lightCaptcha = document.querySelector('.captcha-container .h-captcha:not([data-theme])');
-    const darkCaptcha = document.querySelector('.captcha-container .h-captcha[data-theme="dark"]');
-
-    // Toggle visibility based on the theme
-    if (theme === 'dark') {
-      lightCaptcha.style.display = 'none';
-      darkCaptcha.style.display = 'block';
-    } else {
-      lightCaptcha.style.display = 'block';
-      darkCaptcha.style.display = 'none';
-    }
-  }
-
+  
   // Initialize theme on page load
   document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme') || 'light'; // Default to light if no theme is saved
