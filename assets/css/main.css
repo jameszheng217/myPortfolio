@@ -1149,7 +1149,15 @@ section,
 }
 
 [data-theme="dark"] .testimonial-item p {
-  color: #333;
+  background-color: #333;
+}
+
+[data-theme="dark"] .testimonial-item p::after {
+  display: none;
+}
+
+[data-theme="dark"] .testimonial-item p {
+  color: #e0e0e0;
 }
 
 #light-theme,
