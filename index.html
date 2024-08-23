@@ -79,8 +79,8 @@
               </ul>
               <a><span>Languages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                
-                <div id="google_translate_element">Select Language:</div>
+
+                <div id="google_translate_element"></div>
               </ul>
             </li>
           </ul>
@@ -837,6 +837,7 @@
 
     <div class="container">
       <div class="copyright text-center ">
+        <p><a href="#">Go to Top</a></p>
         <p>&copy;<span>Copyright</span><strong class="px-1 sitename">Samarjit</strong><span>All Rights Reserved</span>
         </p>
       </div>
@@ -847,9 +848,7 @@
 
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -869,10 +868,12 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <script type="text/javascript"src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <!-- Google Translate -->
+  <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <script type="text/javascript">
     function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
     }
   </script>
 
@@ -882,7 +883,6 @@
   <!-- Botpress Chatbot -->
   <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
   <script src="https://mediafiles.botpress.cloud/16756fe9-836d-4dac-bdc7-1e59c45755ef/webchat/v2.1/config.js"></script>
-
 
 </body>
 
