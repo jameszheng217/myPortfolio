@@ -267,6 +267,5 @@
   document.getElementById('dark-theme-radio').addEventListener('change', () => {
     applyTheme('dark');
   });
-
-
+  
 })();

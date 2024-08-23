@@ -77,6 +77,11 @@
                   <label for="dark-theme-radio">Dark Theme</label>
                 </li>
               </ul>
+              <a><span>Languages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                
+                <div id="google_translate_element">Select Language:</div>
+              </ul>
             </li>
           </ul>
         </li>
@@ -864,9 +869,17 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script type="text/javascript"src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+  </script>
+
   <!-- Captcha JS File -->
   <script src="https://web3forms.com/client/script.js" async defer></script>
 
+  <!-- Botpress Chatbot -->
   <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
   <script src="https://mediafiles.botpress.cloud/16756fe9-836d-4dac-bdc7-1e59c45755ef/webchat/v2.1/config.js"></script>
 
