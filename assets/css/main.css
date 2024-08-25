@@ -1164,3 +1164,81 @@ input[type="radio"]:checked+label {
 #dark-theme-radio:checked~.theme-settings #dark-theme-radio+label {
   color: var(--accent-color);
 }
+
+/* Icon Hover Text */
+.icon {
+  position: relative;
+  display: inline-block;
+}
+
+.gmail::after {
+  content: 'Open Mail';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  font-size: 12px;
+}
+
+.github::after {
+  content: 'Open GitHub';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  font-size: 12px;
+}
+
+.linkedin::after {
+  content: 'Open Linkedin';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  font-size: 12px;
+}
+
+.download::after {
+  content: 'Download Resume';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  font-size: 12px;
+}
+
+.icon:hover::after {
+  opacity: 1;
+}

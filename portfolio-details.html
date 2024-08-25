@@ -5,8 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Samarjit Sahoo</title>
-  <meta name="description" content="Welcome to my portfolio! I am Samarjit Sahoo, an enthusiastic coder driven by an unyielding passion for programming.  I am dedicated to mastering new technologies and solving complex problems.">
-  <meta name="keywords" content="Samarjit Sahoo, Samarjit, samarjit sahoo, SAMARJIT SAHOO, portfolio, Portfolio, personal portfolio, Personal Portfolio, web developer, coder, programming, programmer, projects, skills, software engineering, JavaScript, Python, Java, C++, HTML, CSS, React, project management, tech enthusiast, technology enthusiast, artificial intelligence, machine learning, data science, data analysis, computer vision">
+  <meta name="description"
+    content="Welcome to my portfolio! I am Samarjit Sahoo, an enthusiastic coder driven by an unyielding passion for programming.  I am dedicated to mastering new technologies and solving complex problems.">
+  <meta name="keywords"
+    content="Samarjit Sahoo, Samarjit, samarjit sahoo, SAMARJIT SAHOO, portfolio, Portfolio, personal portfolio, Personal Portfolio, web developer, coder, programming, programmer, projects, skills, software engineering, JavaScript, Python, Java, C++, HTML, CSS, React, project management, tech enthusiast, technology enthusiast, artificial intelligence, machine learning, data science, data analysis, computer vision">
   <meta name="author" content="Samarjit Sahoo">
 
   <!-- Favicons -->
@@ -45,10 +47,11 @@
     </a>
 
     <div class="social-links text-center">
-      <a href="mailto:samarjit9203@gmail.com" class="gmail" target="_blank"><i class="bi bi-envelope-fill"></i></a>
-      <a href="https://github.com/samarjit-sahoo" class="github" target="_blank"><i class="bi bi-github"></i></a>
-      <a href="https://www.linkedin.com/in/samarjit-sahoo/" class="linkedin" target="_blank"><i
+      <a href="mailto:samarjit9203@gmail.com" class="icon gmail" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+      <a href="https://github.com/samarjit-sahoo" class="icon github" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/samarjit-sahoo/" class="icon linkedin" target="_blank"><i
           class="bi bi-linkedin"></i></a>
+      <a href="assets/img/Resume.docx" class="icon download" target="_blank"><i class="bi bi-download"></i></a>
     </div>
 
     <nav id="navmenu" class="navmenu">
@@ -75,6 +78,11 @@
                   <input type="radio" id="dark-theme-radio" name="theme" value="dark">
                   <label for="dark-theme-radio">Dark Theme</label>
                 </li>
+              </ul>
+              <a><span>Languages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <div id="google_translate_element"></div>
+                <p id="translate_error" style="display:none; color: red;">Unable to load languages. Revisit Page and try again!</p>
               </ul>
             </li>
           </ul>
@@ -180,6 +188,7 @@
 
     <div class="container">
       <div class="copyright text-center ">
+        <p><a href="#">Go to Top</a></p>
         <p>&copy;<span>Copyright</span> <strong class="px-1 sitename">Samarjit</strong> <span>All Rights Reserved</span>
         </p>
       </div>
@@ -189,10 +198,6 @@
     </div>
 
   </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -211,6 +216,32 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Google Translate -->
+  <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+      // If initialized, hide the error message
+      document.getElementById('translate_error').style.display = 'none';
+    }
+
+    // Fallback in case Google Translate doesn't load
+    window.onload = function () {
+      setTimeout(function () {
+        var translateElement = document.getElementById('google_translate_element');
+        if (!translateElement || !translateElement.querySelector('.skiptranslate')) {
+          // Display the error message
+          document.getElementById('translate_error').style.display = 'block';
+        }
+      }, 5000); // Check after 5 seconds
+    };
+  </script>
+
+  <!-- Botpress Chatbot -->
+  <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+  <script src="https://mediafiles.botpress.cloud/16756fe9-836d-4dac-bdc7-1e59c45755ef/webchat/v2.1/config.js"></script>
 
 </body>
 

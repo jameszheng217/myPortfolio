@@ -46,10 +46,11 @@
     </a>
 
     <div class="social-links text-center">
-      <a href="mailto:samarjit9203@gmail.com" class="gmail" target="_blank"><i class="bi bi-envelope-fill"></i></a>
-      <a href="https://github.com/samarjit-sahoo" class="github" target="_blank"><i class="bi bi-github"></i></a>
-      <a href="https://www.linkedin.com/in/samarjit-sahoo/" class="linkedin" target="_blank"><i
+      <a href="mailto:samarjit9203@gmail.com" class="icon gmail" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+      <a href="https://github.com/samarjit-sahoo" class="icon github" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/samarjit-sahoo/" class="icon linkedin" target="_blank"><i
           class="bi bi-linkedin"></i></a>
+      <a href="assets/img/Resume.docx" class="icon download" target="_blank"><i class="bi bi-download"></i></a>
     </div>
 
     <nav id="navmenu" class="navmenu">
@@ -79,8 +80,8 @@
               </ul>
               <a><span>Languages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-
                 <div id="google_translate_element"></div>
+                <p id="translate_error" style="display:none; color: red;">Unable to load languages. Revisit Page and try again!</p>
               </ul>
             </li>
           </ul>
@@ -848,7 +849,7 @@
 
   </footer>
 
-  
+
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -874,7 +875,20 @@
   <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+      // If initialized, hide the error message
+      document.getElementById('translate_error').style.display = 'none';
     }
+
+    // Fallback in case Google Translate doesn't load
+    window.onload = function () {
+      setTimeout(function () {
+        var translateElement = document.getElementById('google_translate_element');
+        if (!translateElement || !translateElement.querySelector('.skiptranslate')) {
+          // Display the error message
+          document.getElementById('translate_error').style.display = 'block';
+        }
+      }, 5000); // Check after 5 seconds
+    };
   </script>
 
   <!-- Captcha JS File -->
