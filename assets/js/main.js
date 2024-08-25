@@ -5,7 +5,6 @@
    * Header toggle
    */
   const headerToggleBtn = document.querySelector('.header-toggle');
-
   function headerToggle() {
     document.querySelector('#header').classList.toggle('header-show');
     headerToggleBtn.classList.toggle('bi-list');
@@ -22,7 +21,6 @@
         headerToggle();
       }
     });
-
   });
 
   /**
@@ -112,7 +110,6 @@
     let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
     let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
     let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
-
     let initIsotope;
     imagesLoaded(isotopeItem.querySelector('.isotope-container'), function () {
       initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
@@ -122,7 +119,6 @@
         sortBy: sort
       });
     });
-
     isotopeItem.querySelectorAll('.isotope-filters li').forEach(function (filters) {
       filters.addEventListener('click', function () {
         isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
@@ -135,7 +131,6 @@
         }
       }, false);
     });
-
   });
 
   /**
@@ -146,7 +141,6 @@
       let config = JSON.parse(
         swiperElement.querySelector(".swiper-config").innerHTML.trim()
       );
-
       if (swiperElement.classList.contains("swiper-tab")) {
         initSwiperWithCustomPagination(swiperElement, config);
       } else {
@@ -154,7 +148,6 @@
       }
     });
   }
-
   window.addEventListener("load", initSwiper);
 
   /**
@@ -179,7 +172,6 @@
    * Navmenu Scrollspy
    */
   let navmenulinks = document.querySelectorAll('.navmenu a');
-
   function navmenuScrollspy() {
     navmenulinks.forEach(navmenulink => {
       if (!navmenulink.hash) return;
@@ -206,11 +198,9 @@
   document.addEventListener('DOMContentLoaded', () => {
     const lightThemeButton = document.getElementById('light-theme');
     const darkThemeButton = document.getElementById('dark-theme');
-
     lightThemeButton.addEventListener('click', () => {
       document.documentElement.setAttribute('data-theme', 'light');
     });
-
     darkThemeButton.addEventListener('click', () => {
       document.documentElement.setAttribute('data-theme', 'dark');
     });
@@ -229,7 +219,6 @@
   document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme') || 'light'; // Default to light if no theme is saved
     applyTheme(savedTheme);
-
     // Set the correct radio button based on the saved theme
     if (savedTheme === 'dark') {
       document.getElementById('dark-theme-radio').checked = true;
@@ -242,7 +231,6 @@
   document.getElementById('light-theme-radio').addEventListener('change', () => {
     applyTheme('light');
   });
-
   document.getElementById('dark-theme-radio').addEventListener('change', () => {
     applyTheme('dark');
   });
