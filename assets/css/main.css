@@ -1177,7 +1177,7 @@ input[type="radio"]:checked+label {
   bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #333;
+  background-color: #333333;
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -1207,6 +1207,23 @@ input[type="radio"]:checked+label {
 
 .linkedin::after {
   content: 'Open Linkedin';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  font-size: 12px;
+}
+
+.apk::after {
+  content: 'Download APK';
   position: absolute;
   bottom: -30px;
   left: 50%;
