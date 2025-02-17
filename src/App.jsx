@@ -35,7 +35,6 @@ function App() {
                   <Tech />
                   <Resume />
                   <Projects />
-                  <Certifications />
                   <Testimonials />
                   <Contact />
                   <Chatbot />

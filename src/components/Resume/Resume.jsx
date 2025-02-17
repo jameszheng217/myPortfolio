@@ -3,53 +3,46 @@ import "./Resume.scss";
 
 const Resume = () => {
   const contactInfo = [
-    "samarjit9203@gmail.com",
-    "https://samarjit.vercel.app",
-    "linkedin.com/in/samarjitsahoo",
-    "github.com/samarjitsahoo",
+    "james.zheng.dev217@gmail.com",
+    "https://gentleman.app",
+    "github.com/gentleman",
   ];
   const education = [
     {
-      title: "Bachelor of Technology",
-      duration: "2021 - 2025",
-      institution: "DRIEMS University",
+      title: "Bachelor of Software Engineering",
+      duration: "2015 - 2019",
+      institution: "ALGOMA University",
       description:
-        "During my B.Tech, I immersed myself in hands-on projects involving modern programming languages, software development tools, and system design. This practical experience helped me build a solid technical foundation and prepared me for real-world challenges in the IT field.",
-    },
-    {
-      title: "Higher Secondary Education",
-      duration: "2018 - 2021",
-      institution: "Ravenshaw University",
-      description:
-        "During my higher education, I focused on the fundamentals of computer science, including basic programming concepts, software development, and system operations. This solid foundation has prepared me for practical applications and further growth in the IT field.",
-    },
-    {
-      title: "Matriculation",
-      duration: "2018",
-      institution: "Kendriya Vidyalaya",
-      description:
-        "During my matriculation, I laid the groundwork with core subjects in computer science, learning the essentials of programming, hardware, and software basics. This early education provided me with a solid start in the IT field.",
+        "During my development, I immersed myself in hands-on projects involving modern programming languages, software development tools, and system design. This practical experience helped me build a solid technical foundation and prepared me for real-world challenges in the IT field.",
     },
   ];
   const internships = [
     {
-      company: "NovaNectar Services Pvt. Ltd.",
-      duration: "June 2024",
-      location: "Dehradun, Uttarakhand, India",
+      company: "Self-employed",
+      duration: "Oct 2024 - present",
+      location: "Montreal, Canada",
       responsibilities: [
-        "Developed a face detection model using Python and OpenCV, achieving high accuracy in identifying and localizing faces in images and video streams.",
-        "Created a predictive model for estimating car prices based on various features such as make, model, year, and mileage using machine learning algorithms like Linear Regression and Decision Trees.",
-        "Implemented data preprocessing techniques and model training processes to enhance the model performance, accuracy, and efficiency.",
+        "Designed, developed, and deployed smart contracts on blockchain platforms like Ethereum, Binance Smart Chain, or Hyperledger.",
+        "I have been focusing on building responsive and dynamic web pages using React.js, Html css, Next.js, Angular.js..."
       ],
     },
     {
-      company: "OctaNet Services Pvt. Ltd.",
-      duration: "April 2024",
-      location: "Bhubaneshwar, Odisha, India",
+      company: "247 Labs Inc",
+      duration: "May 2022 - Sep 2024",
+      location: "Toronto, Canada",
       responsibilities: [
-        "Designed and developed a responsive landing page for the company using HTML, CSS, and JavaScript.",
-        "Created a fully functional to-do list application with CRUD (Create, Read, Update, Delete) operations.",
-        "Implemented modern design principles to enhance user experience and engagement.",
+        "Led multiple projects from concept to completion, ensuring timel delivery and alignment with client goals.",
+        "Engineered a comprehensive cloud backup system featuring a multi-step sign-up process and asynchronous backend services using React.js and Next.js, resulting in a 40% increase in user engagement.",
+        "Implemented both MongoDB and PostgreSQL to enhance data management efficiency, leading to a 25% improvement in data retrieval times.",
+      ],
+    },
+    {
+      company: "Many Hats",
+      duration: "August 2019 - April 2022",
+      location: "Burnaby, Canada",
+      responsibilities: [
+        "Developed innovative front-end applications, focusing on delivering exceptional user experiences while meeting business objectives.",
+        "Utilized HTML, CSS, JavaScript, jQuery, React, Next.js, Angular, WordPress, and Laravel to develop dynamic and responsive web applications.",
       ],
     },
   ];
@@ -59,10 +52,10 @@ const Resume = () => {
       <div className="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
         <a
-          href="https://drive.google.com/uc?id=1D3qRmxsVeih2Ht6voj7IXV5kkd4Rch1p&export=download"
+          href="./public/JamesZheng_CV.pdf"
           className="icon resume"
           target="_blank"
-          download="Resume"
+          download="James Zheng"
           aria-label="Download Resume"
         >
           <i className="bi bi-download"></i>
@@ -83,11 +76,16 @@ const Resume = () => {
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 className="resume-title">Summary</h3>
             <div className="resume-item pb-0">
-              <h4>Samarjit Sahoo</h4>
+              <h4>James Zheng</h4>
               <p className="justify">
-                I am an aspiring and passionate IT professional with a strong
-                foundation in programming and software development. I recently
-                graduated with a degree in Computer Science and Engineering.
+              I am a Senior Full-stack developer with 6 years of rich experience in
+              building scalable and high-performance web applications. Skilled in React,
+              Next.js, Svelte,Vue.js, Angular, Node.js, and GraphQL. Strong expertise in
+              data integration and optimized database management, maximizing data
+              processing speed with MongoDB, MySQL, and PostgreSQL.Proficient in
+              Python, AWS and best practices such as TDD and Agile(SCRUM).
+              I am adept at building secure, scalable, and innovative blockchain
+              applications across diverse ecosystems
               </p>
               <ul>
                 {contactInfo.map((contact, index) => (
@@ -108,7 +106,7 @@ const Resume = () => {
             ))}
           </div>
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 className="resume-title">Internships</h3>
+            <h3 className="resume-title">Work Experience</h3>
             {internships.map((internship, index) => (
               <div className="resume-item" key={index}>
                 <h4>{internship.company}</h4>

@@ -67,15 +67,23 @@ const Portfolio = () => {
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
               <div className="portfolio-content h-100">
                 <img
-                  src="https://res.cloudinary.com/dry07iyvo/image/upload/v1735121481/demo_xhn7qz.jpg"
+                  src="./public/image/Grow_1.PNG"
                   className="img-fluid"
                   alt="Project 1"
                 />
                 <div className="portfolio-info">
                   <h4>Project 1</h4>
-                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>GrowCurriculum</p>
                   <a
-                    href="https://res.cloudinary.com/dry07iyvo/image/upload/v1735121481/demo_xhn7qz.jpg"
+                    href="./public/image/Grow_1.PNG"
+                    title="Project 1"
+                    data-gallery="portfolio-gallery-app"
+                    className="glightbox preview-link"
+                  >
+                    <i className="bi bi-zoom-in"></i>
+                  </a>
+                  <a
+                    href="./public/image/Grow_1.PNG"
                     title="Project 1"
                     data-gallery="portfolio-gallery-app"
                     className="glightbox preview-link"
@@ -95,15 +103,15 @@ const Portfolio = () => {
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
               <div className="portfolio-content h-100">
                 <img
-                  src="https://res.cloudinary.com/dry07iyvo/image/upload/v1735121481/demo_xhn7qz.jpg"
+                  src="./public/image/CrewStudio.PNG"
                   className="img-fluid"
                   alt="Project 2"
                 />
                 <div className="portfolio-info">
                   <h4>Project 2</h4>
-                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p>CrewStudio</p>
                   <a
-                    href="https://res.cloudinary.com/dry07iyvo/image/upload/v1735121481/demo_xhn7qz.jpg"
+                    href="./public/image/CrewStudio.PNG"
                     title="Project 2"
                     data-gallery="portfolio-gallery-app"
                     className="glightbox preview-link"
@@ -123,16 +131,100 @@ const Portfolio = () => {
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
               <div className="portfolio-content h-100">
                 <img
-                  src="https://res.cloudinary.com/dry07iyvo/image/upload/v1735121481/demo_xhn7qz.jpg"
+                  src="./public/image/Quan2um.PNG"
                   className="img-fluid"
-                  alt="Project 3"
+                  alt="Quan2um"
                 />
                 <div className="portfolio-info">
                   <h4>Project 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Market Hero</p>
                   <a
-                    href="https://res.cloudinary.com/dry07iyvo/image/upload/v1735121481/demo_xhn7qz.jpg"
+                    href="./public/image/Quan2um.PNG"
                     title="Project 3"
+                    data-gallery="portfolio-gallery-app"
+                    className="glightbox preview-link"
+                  >
+                    <i className="bi bi-zoom-in"></i>
+                  </a>
+                  <Link
+                    to="/projects"
+                    title="More Details"
+                    className="details-link"
+                  >
+                    <i className="bi bi-link-45deg"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div className="portfolio-content h-100">
+                <img
+                  src="./public/image/acceptmission1.png"
+                  className="img-fluid"
+                  alt="Project 4"
+                />
+                <div className="portfolio-info">
+                  <h4>Project 4</h4>
+                  <p>Acceptmission</p>
+                  <a
+                    href="./public/image/acceptmission1.png"
+                    title="Project 4"
+                    data-gallery="portfolio-gallery-app"
+                    className="glightbox preview-link"
+                  >
+                    <i className="bi bi-zoom-in"></i>
+                  </a>
+                  <Link
+                    to="/projects"
+                    title="More Details"
+                    className="details-link"
+                  >
+                    <i className="bi bi-link-45deg"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div className="portfolio-content h-100">
+                <img
+                  src="./public/image/doxy.png"
+                  className="img-fluid"
+                  alt="Project 5"
+                />
+                <div className="portfolio-info">
+                  <h4>Project 5</h4>
+                  <p>Doxy|Healthcare</p>
+                  <a
+                    href="./public/image/doxy.png"
+                    title="Project 5"
+                    data-gallery="portfolio-gallery-app"
+                    className="glightbox preview-link"
+                  >
+                    <i className="bi bi-zoom-in"></i>
+                  </a>
+                  <Link
+                    to="/projects"
+                    title="More Details"
+                    className="details-link"
+                  >
+                    <i className="bi bi-link-45deg"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div className="portfolio-content h-100">
+                <img
+                  src="./public/image/mobility.png"
+                  className="img-fluid"
+                  alt="Project 6"
+                />
+                <div className="portfolio-info">
+                  <h4>Project 6</h4>
+                  <p>Mobilityworkout</p>
+                  <a
+                    href="./public/image/mobility.png"
+                    title="Project 6"
                     data-gallery="portfolio-gallery-app"
                     className="glightbox preview-link"
                   >

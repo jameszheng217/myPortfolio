@@ -11,43 +11,27 @@ SwiperCore.use([Autoplay, Pagination]);
 const testimonialsData = [
   {
     quote:
-    "Samarjit\u2019s expertise and problem-solving skills were instrumental in our project\u2019s success. His dedication and ability to quickly adapt to new challenges made working with him a seamless experience. Highly recommended for anyone seeking a committed and skilled developer.",
-    image: "https://avatars.githubusercontent.com/u/74724579?v=4",
-    name: "Shaikh Yakub Hossain",
-    position: "Game Developer",
-    country: "India",
+    "James\u2019s expertise and problem-solving skills were instrumental in our project\u2019s success. His dedication and ability to quickly adapt to new challenges made working with him a seamless experience. Highly recommended for anyone seeking a committed and skilled developer.",
+    image: "./public/image/Benjamin Thomas.jpg",
+    name: "Benjamin Thomas",
+    position: "Frontend Developer",
+    country: "Canada",
   },
   {
     quote:
-    "Samarjit\u2019s creativity and technical expertise significantly enhanced our project. His ability to tackle complex problems and deliver results on time was impressive. Working with him was a fantastic experience, and his contributions were invaluable.",
-    image: "https://avatars.githubusercontent.com/u/129244274?v=4",
-    name: "Soumya Khuntia",
-    position: "AI/ML Developer",
-    country: "India",
+    "James\u2019s creativity and technical expertise significantly enhanced our project. His ability to tackle complex problems and deliver results on time was impressive. Working with him was a fantastic experience, and his contributions were invaluable.",
+    image: "./public/image/Jack Oliver.jpg",
+    name: "Jack Oliver",
+    position: "Full Stack Developer",
+    country: "Canada",
   },
   {
     quote:
-      "Samarjit consistently delivered high-quality work and demonstrated exceptional technical skills throughout our collaboration. His proactive approach and attention to detail greatly contributed to the project\u2019s success. A true professional who is a pleasure to work with.",
-    image: "https://avatars.githubusercontent.com/u/144861807?v=4",
-    name: "Jagannath Ojha",
+      "James consistently delivered high-quality work and demonstrated exceptional technical skills throughout our collaboration. His proactive approach and attention to detail greatly contributed to the project\u2019s success. A true professional who is a pleasure to work with.",
+    image: "./public/image/William Gabriel.jpg",
+    name: "William Gabriel",
     position: "Website Developer",
-    country: "India",
-  },
-  {
-    quote:
-      "Samarjit\u2019s dedication and technical proficiency were evident from the start. His clear communication and ability to deliver high-quality work under tight deadlines were outstanding. He\u2019s a reliable and skilled developer who truly excels in his field.",
-    image: "https://avatars.githubusercontent.com/u/111912787?v=4",
-    name: "Soumya Satapathy",
-    position: "UI/UX Designer",
-    country: "India",
-  },
-  {
-    quote:
-      "Samarjit\u2019s commitment and technical knowledge were crucial in achieving our project goals. His innovative solutions and willingness to go the extra mile made a noticeable impact. I highly value his work ethic and problem-solving abilities.",
-    image: "https://avatars.githubusercontent.com/u/147426315?v=4",
-    name: "Mohammed Shizan",
-    position: "Website Developer",
-    country: "India",
+    country: "Canada",
   },
 ];
 

@@ -1,9 +1,10 @@
 {
-  "name": "samarjit",
+  "name": "james",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "react-scripts start",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -21,6 +22,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0",
+    "react-scripts": "^5.0.1",
     "swiper": "^11.1.14",
     "typed.js": "^2.1.0"
   },

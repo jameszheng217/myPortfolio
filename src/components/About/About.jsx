@@ -17,7 +17,7 @@ const About = () => (
       <div className="row gy-4 justify-content-center">
         <div className="col-lg-4 text-center">
           <img
-            src="https://res.cloudinary.com/dry07iyvo/image/upload/v1735121310/me_ebrfho.jpg"
+            src="./public/image/James.jpg"
             className="img-fluid"
             style={{
               maxWidth: "80%",
@@ -30,7 +30,7 @@ const About = () => (
           />
         </div>
         <div className="col-lg-8 content">
-          <h2>Software Engineer</h2>
+          <h2>Software Engineer & Blockchain Developer</h2>
           <p className="py-3 justify">
             Being a Software Engineer means turning abstract ideas into
             tangible, working solutions. I find immense satisfaction in crafting
@@ -39,9 +39,9 @@ const About = () => (
           <div className="row">
             {[
               { label: "Degree", value: "Bachelor of Technology" },
-              { label: "Email", value: "samarjit9203@gmail.com" },
-              { label: "Website", value: "https://samarjit.vercel.app" },
-              { label: "Address", value: "Cuttack, Odisha, India" },
+              { label: "Email", value: "james.zheng.dev217@gmail.com" },
+              { label: "Website", value: "https://gentleman.app" },
+              { label: "Address", value: "Montreal, Canada" },
             ].map((item, index) => (
               <div className="col-lg-6" key={index}>
                 <ul>

@@ -11,11 +11,11 @@ const Footer = () => {
           </p>
           <p>
             &copy;<span>Copyright</span>
-            <strong className="px-1 sitename">Samarjit</strong>
+            <strong className="px-1 sitename">James</strong>
             <span>All Rights Reserved</span>
           </p>
         </div>
-        <div className="credits">Designed and Developed by Samarjit</div>
+        <div className="credits">Designed and Developed by James</div>
       </div>
     </footer>
   );

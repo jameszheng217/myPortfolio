@@ -68,7 +68,7 @@ const Navbar = () => {
       ></i>
       <div className="profile-img">
         <img
-          src="https://res.cloudinary.com/dry07iyvo/image/upload/v1735121310/me_ebrfho.jpg"
+          src="./public/image/James.jpg"
           alt="Profile"
           className="img-fluid rounded-circle"
         />
@@ -78,11 +78,11 @@ const Navbar = () => {
         className="logo d-flex align-items-center justify-content-center"
         style={{ textDecoration: "none" }}
       >
-        <h1 className="sitename">Samarjit Sahoo</h1>
+        <h1 className="sitename">James Zheng</h1>
       </Link>
       <div className="social-links text-center">
         <a
-          href="mailto:samarjit9203@gmail.com"
+          href="mailto:james.zheng.dev217@gmail.com"
           className="icon gmail"
           target="_blank"
           rel="noopener noreferrer"
@@ -91,15 +91,15 @@ const Navbar = () => {
           <i className="bi bi-envelope-fill"></i>
         </a>
         <a
-          href="https://github.com/samarjitsahoo"
+          href="https://github.com/gentleman"
           className="icon github"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Visit Samarjit's GitHub profile"
+          aria-label="Visit James's GitHub profile"
         >
           <i className="bi bi-github"></i>
         </a>
-        <a
+        {/* <a
           href="https://www.linkedin.com/in/samarjitsahoo/"
           className="icon linkedin"
           target="_blank"
@@ -107,7 +107,7 @@ const Navbar = () => {
           aria-label="Connect with Samarjit on LinkedIn"
         >
           <i className="bi bi-linkedin"></i>
-        </a>
+        </a> */}
       </div>
 
       <nav id="navmenu" className="navmenu">
@@ -117,7 +117,7 @@ const Navbar = () => {
             { href: "#about", icon: "person", label: "About" },
             { href: "#resume", icon: "file-earmark-text", label: "Resume" },
             { href: "#projects", icon: "images", label: "Projects" },
-            { href: "#certifications", icon: "award", label: "Certifications" },
+            // { href: "#certifications", icon: "award", label: "Certifications" },
             { href: "#testimonials", icon: "people", label: "Testimonials" },
             { href: "#contact", icon: "envelope", label: "Contact" },
           ].map((item) => (

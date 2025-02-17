@@ -44,97 +44,133 @@ const ProjectDetails = () => {
 
   const imagesGroup1 = [
     {
-      src: "https://raw.githubusercontent.com/samarjitsahoo/auction-platform/main/assets/home.png",
-      alt: "Image 9",
+      src: "./public/image/Grow_1.png",
+      alt: "Image 1",
     },
-    {
-      src: "https://raw.githubusercontent.com/samarjitsahoo/auction-platform/main/assets/auction.png",
-      alt: "Image 10",
-    },
-    {
-      src: "https://raw.githubusercontent.com/samarjitsahoo/auction-platform/main/assets/bidders.png",
-      alt: "Image 11",
-    },
-    {
-      src: "https://raw.githubusercontent.com/samarjitsahoo/auction-platform/main/assets/profile.png",
-      alt: "Image 12",
-    },
+    // {
+    //   src: "https://raw.githubusercontent.com/samarjitsahoo/auction-platform/main/assets/auction.png",
+    //   alt: "Image 10",
+    // },
+    // {
+    //   src: "https://raw.githubusercontent.com/samarjitsahoo/auction-platform/main/assets/bidders.png",
+    //   alt: "Image 11",
+    // },
+    // {
+    //   src: "https://raw.githubusercontent.com/samarjitsahoo/auction-platform/main/assets/profile.png",
+    //   alt: "Image 12",
+    // },
   ];
 
   const imagesGroup2 = [
     {
-      src: "https://res.cloudinary.com/dry07iyvo/image/upload/v1735121481/demo_xhn7qz.jpg",
-      alt: "Image 9",
-    },
-    {
-      src: "https://res.cloudinary.com/dry07iyvo/image/upload/v1735121481/demo_xhn7qz.jpg",
-      alt: "Image 10",
-    },
-    {
-      src: "https://res.cloudinary.com/dry07iyvo/image/upload/v1735121481/demo_xhn7qz.jpg",
-      alt: "Image 11",
-    },
-    {
-      src: "https://res.cloudinary.com/dry07iyvo/image/upload/v1735121481/demo_xhn7qz.jpg",
-      alt: "Image 12",
+      src: "./public/image/CrewStudio.Png",
+      alt: "Image 2",
     },
   ];
 
   const imagesGroup3 = [
     {
-      src: "https://res.cloudinary.com/dry07iyvo/image/upload/v1735121481/demo_xhn7qz.jpg",
-      alt: "Image 9",
-    },
-    {
-      src: "https://res.cloudinary.com/dry07iyvo/image/upload/v1735121481/demo_xhn7qz.jpg",
-      alt: "Image 10",
-    },
-    {
-      src: "https://res.cloudinary.com/dry07iyvo/image/upload/v1735121481/demo_xhn7qz.jpg",
-      alt: "Image 11",
-    },
-    {
-      src: "https://res.cloudinary.com/dry07iyvo/image/upload/v1735121481/demo_xhn7qz.jpg",
-      alt: "Image 12",
+      src: "./public/image/Quan2um.png",
+      alt: "Image 3",
     },
   ];
 
+  const imagesGroup4 = [
+    {
+      src: "./public/image/acceptmission1.png",
+      alt: "Image 4"
+    },
+  ]
+
+  const imagesGroup5 = [
+    {
+      src: "./public/image/doxy.png",
+      alt: "Image 5"
+    },
+  ]
+
+  const imagesGroup6 = [
+    {
+      src: "./public/image/mobility.png",
+      alt: "Image 6"
+    },
+  ]
+
   const projectInfo = [
     {
-      name: "Auction Platform",
+      name: "Growcurriculum",
       category: "Website Project",
-      webUrl: "https://samarbid.netlify.app",
-      githubUrl: "https://github.com/samarjitsahoo/auction-platform",
+      webUrl: "https://growcurriculum.org",
     },
     {
-      name: "Job Portal",
+      name: "Crew Studio",
       category: "Website Project",
-      webUrl: "",
-      githubUrl: "",
+      webUrl: "https://www.behance.net/gallery/128504717/Crewstudio-Marketing-CRM-Web-Application",
     },
     {
-      name: "Blog Website",
+      name: "Market Hero",
       category: "Website Project",
-      webUrl: "",
-      githubUrl: "",
+      webUrl: "https://markethero.io",
+    },
+    {
+      name: "Accept mission",
+      category: "Website Project",
+      webUrl: "https://acceptmission.com",
+    },
+    {
+      name: "Doxy|Healthcare",
+      category: "Website Project",
+      webUrl: "https://doxy.me/en",
+    },
+    {
+      name: "Mobilityworkout",
+      category: "Website Project",
+      webUrl: "https://www.mobilityworkout.com/",
     },
   ];
 
   const projectDescriptions = [
     {
-      title: "Auction Platfrom",
+      title: "Grow Curriculum",
       description:
-        "A full-stack online auction platform enabling seamless user interactions for creating, managing, and participating in auctions. This repository combines the frontend and backend, offering an integrated solution for user-friendly interfaces and scalable backend services. The platform is designed to deliver a smooth and engaging auction experience!",
+        `This platform offers a variety of tools and materials aimed at enhancing ministry programs for preschool, elementary, middle, and high school students.
+Skills: HTML/CSS,JavaScript,React.js,Node.js,Express.js,
+         MongoDB,AWS`
     },
     {
-      title: "Job Portal",
+      title: "CrewStudio",
       description:
-        "lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid repellat id optio!",
+        `This project showcases the design of a marketing Customer Relationship Management (CRM) web application named Crewstudio.
+Skills: HTML5/CSS3,JavaScript,React.js,Node.js,Express.js,
+        MongoDB,AWS,Figma,Adobe XD`,
     },
     {
-      title: "Blog Website",
+      title: "Market Hero",
       description:
-        "lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid repellat id optio!",
+        `Market Hero is an email marketing platform that integrates advanced sales tracking and automation features to enhance business communication and revenue generation.
+Skills: React.js, JavaScript, HTML5/CSS3, Node.js, Express.js, 
+         MongoDB`,
+    },
+    {
+      title: "Accept mission",
+      description:
+        `This platform offers a comprehensive suite of tools to facilitate innovation campaigns, manage ideas through structured funnels, and execute projects efficiently.
+Skills: HTML5/CSS3,WordPress,PHP,JavaScript,MySQL,
+         jQuery`,
+    },
+    {
+      title: "Doxy|Healthcare",
+      description:
+        `This platform is a telemedicine platform providing secure, user-friendly video calling solutions for healthcare providers to connect with patients virtually.
+Skills: React.js, Node.js, Express.js, MongoDB, Chatbot, 
+         Docker, JavaScript, Python`,
+    },
+    {
+      title: "Mobilityworkout",
+      description:
+        `This fully responsive site features videos and products for mobility exercises.
+Skills: React, HTML5/CSS3, Redux, Wordpress, JavaScript, 
+         MySQL`,
     },
   ];
 
@@ -164,12 +200,18 @@ const ProjectDetails = () => {
       </div>
       {projectInfo.map((project, index) => {
         let selectedImageGroup;
-        if (index % 3 === 0) {
+        if (index % 6 === 0) {
           selectedImageGroup = imagesGroup1;
-        } else if (index % 3 === 1) {
+        } else if (index % 6 === 1) {
           selectedImageGroup = imagesGroup2;
-        } else {
+        }else if (index % 6 === 2) {
           selectedImageGroup = imagesGroup3;
+        } else if (index % 6 === 3) {
+          selectedImageGroup = imagesGroup4;
+        } else if (index % 6 === 4) {
+          selectedImageGroup = imagesGroup5;
+        } else {
+          selectedImageGroup = imagesGroup6;
         }
 
         return (
@@ -185,6 +227,7 @@ const ProjectDetails = () => {
                 </div>
                 <div className="col-lg-4">
                   <div
+                    style={{whiteSpace: 'pre-wrap'}}
                     className="portfolio-description"
                     data-aos="fade-up"
                     data-aos-delay="300"
@@ -211,16 +254,6 @@ const ProjectDetails = () => {
                         <strong>Website URL</strong>:&nbsp;
                         <a
                           href={project.webUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Click here
-                        </a>
-                      </li>
-                      <li>
-                        <strong>GitHub URL</strong>:&nbsp;
-                        <a
-                          href={project.githubUrl}
                           target="_blank"
                           rel="noopener noreferrer"
                         >

@@ -6,23 +6,23 @@ const Tech = () => {
     () => [
       {
         id: "tech1",
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
-        alt: "C Language",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+        alt: "React.js",
       },
       {
         id: "tech2",
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
-        alt: "C++",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+        alt: "Next.js",
       },
       {
         id: "tech3",
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
-        alt: "Java",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg",
+        alt: "Angularjs",
       },
       {
         id: "tech4",
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-        alt: "Python",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
+        alt: "Vue.js",
       },
       {
         id: "tech5",
@@ -51,8 +51,8 @@ const Tech = () => {
       },
       {
         id: "tech10",
-        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-        alt: "React",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+        alt: "Python",
       },
       {
         id: "tech11",
@@ -65,7 +65,6 @@ const Tech = () => {
         alt: "MongoDB",
       },
     ],
-    []
   );
 
   return (
