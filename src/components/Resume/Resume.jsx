@@ -4,8 +4,8 @@ import "./Resume.scss";
 const Resume = () => {
   const contactInfo = [
     "james.zheng.dev217@gmail.com",
-    "https://gentleman.app",
-    "github.com/gentleman",
+    "https://jameszhengportfolio.netlify.app",
+    "github.com/James-Zheng217",
   ];
   const education = [
     {
@@ -52,7 +52,7 @@ const Resume = () => {
       <div className="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
         <a
-          href="./public/JamesZheng_CV.pdf"
+          href="./JamesZheng_CV.pdf"
           className="icon resume"
           target="_blank"
           download="James Zheng"

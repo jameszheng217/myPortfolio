@@ -44,7 +44,7 @@ const ProjectDetails = () => {
 
   const imagesGroup1 = [
     {
-      src: "./public/image/Grow_1.png",
+      src: "./image/grow_1.png",
       alt: "Image 1",
     },
     // {
@@ -63,35 +63,35 @@ const ProjectDetails = () => {
 
   const imagesGroup2 = [
     {
-      src: "./public/image/CrewStudio.Png",
+      src: "./image/crewstudio.png",
       alt: "Image 2",
     },
   ];
 
   const imagesGroup3 = [
     {
-      src: "./public/image/Quan2um.png",
+      src: "./image/quan2um.png",
       alt: "Image 3",
     },
   ];
 
   const imagesGroup4 = [
     {
-      src: "./public/image/acceptmission1.png",
+      src: "./image/acceptmission1.png",
       alt: "Image 4"
     },
   ]
 
   const imagesGroup5 = [
     {
-      src: "./public/image/doxy.png",
+      src: "./image/doxy.png",
       alt: "Image 5"
     },
   ]
 
   const imagesGroup6 = [
     {
-      src: "./public/image/mobility.png",
+      src: "./image/mobility.png",
       alt: "Image 6"
     },
   ]

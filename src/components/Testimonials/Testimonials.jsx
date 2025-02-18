@@ -12,7 +12,7 @@ const testimonialsData = [
   {
     quote:
     "James\u2019s expertise and problem-solving skills were instrumental in our project\u2019s success. His dedication and ability to quickly adapt to new challenges made working with him a seamless experience. Highly recommended for anyone seeking a committed and skilled developer.",
-    image: "./public/image/Benjamin Thomas.jpg",
+    image: "./image/Benjamin Thomas.jpg",
     name: "Benjamin Thomas",
     position: "Frontend Developer",
     country: "Canada",
@@ -20,7 +20,7 @@ const testimonialsData = [
   {
     quote:
     "James\u2019s creativity and technical expertise significantly enhanced our project. His ability to tackle complex problems and deliver results on time was impressive. Working with him was a fantastic experience, and his contributions were invaluable.",
-    image: "./public/image/Jack Oliver.jpg",
+    image: "./image/Jack Oliver.jpg",
     name: "Jack Oliver",
     position: "Full Stack Developer",
     country: "Canada",
@@ -28,7 +28,7 @@ const testimonialsData = [
   {
     quote:
       "James consistently delivered high-quality work and demonstrated exceptional technical skills throughout our collaboration. His proactive approach and attention to detail greatly contributed to the project\u2019s success. A true professional who is a pleasure to work with.",
-    image: "./public/image/William Gabriel.jpg",
+    image: "./image/William Gabriel.jpg",
     name: "William Gabriel",
     position: "Website Developer",
     country: "Canada",
