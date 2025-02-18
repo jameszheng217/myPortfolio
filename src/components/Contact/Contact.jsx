@@ -11,7 +11,7 @@ const Contact = () => {
       return script;
     };
     const web3FormsScript = loadScript(
-      "https://web3forms.com/client/script.js"
+      // "https://web3forms.com/client/script.js"
     );
     return () => {
       document.head.removeChild(web3FormsScript);

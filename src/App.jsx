@@ -37,7 +37,7 @@ function App() {
                   <Projects />
                   <Testimonials />
                   <Contact />
-                  <Chatbot />
+                  {/* <Chatbot /> */}
                 </>
               }
             />
