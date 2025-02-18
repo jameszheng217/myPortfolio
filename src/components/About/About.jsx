@@ -17,7 +17,7 @@ const About = () => (
       <div className="row gy-4 justify-content-center">
         <div className="col-lg-4 text-center">
           <img
-            src="./image/James.jpg"
+            src="/image/James.jpg"
             className="img-fluid"
             style={{
               maxWidth: "80%",
@@ -38,9 +38,9 @@ const About = () => (
           </p>
           <div className="row">
             {[
-              { label: "Degree", value: "Bachelor of Technology" },
+              { label: "Degree", value: "Bachelor of Software Engineering" },
               { label: "Email", value: "james.zheng.dev217@gmail.com" },
-              { label: "Website", value: "https://jameszhengportfolio.netlify.app" },
+              // { label: "Website", value: "https://jameszhengportfolio.netlify.app" },
               { label: "Address", value: "Montreal, Canada" },
             ].map((item, index) => (
               <div className="col-lg-6" key={index}>

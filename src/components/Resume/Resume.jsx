@@ -52,7 +52,7 @@ const Resume = () => {
       <div className="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
         <a
-          href="./JamesZheng_CV.pdf"
+          href="/JamesZheng_CV.pdf"
           className="icon resume"
           target="_blank"
           download="James Zheng"

@@ -68,7 +68,7 @@ const Navbar = () => {
       ></i>
       <div className="profile-img">
         <img
-          src="./image/James.jpg"
+          src="/image/James.jpg"
           alt="Profile"
           className="img-fluid rounded-circle"
         />
@@ -91,7 +91,7 @@ const Navbar = () => {
           <i className="bi bi-envelope-fill"></i>
         </a>
         <a
-          href="https://github.com/James-Zheng217"
+          href="https://github.com/jameszheng217"
           className="icon github"
           target="_blank"
           rel="noopener noreferrer"

@@ -41,57 +41,44 @@ const ProjectDetails = () => {
       <div className="swiper-pagination"></div>
     </Swiper>
   );
-
   const imagesGroup1 = [
     {
-      src: "./image/grow_1.png",
+      src: "/image/Grow_1.PNG",
       alt: "Image 1",
     },
-    // {
-    //   src: "https://raw.githubusercontent.com/samarjitsahoo/auction-platform/main/assets/auction.png",
-    //   alt: "Image 10",
-    // },
-    // {
-    //   src: "https://raw.githubusercontent.com/samarjitsahoo/auction-platform/main/assets/bidders.png",
-    //   alt: "Image 11",
-    // },
-    // {
-    //   src: "https://raw.githubusercontent.com/samarjitsahoo/auction-platform/main/assets/profile.png",
-    //   alt: "Image 12",
-    // },
   ];
 
   const imagesGroup2 = [
     {
-      src: "./image/crewstudio.png",
+      src: "/image/CrewStudio.PNG",
       alt: "Image 2",
     },
   ];
 
   const imagesGroup3 = [
     {
-      src: "./image/quan2um.png",
+      src: "/image/Quan2um.PNG",
       alt: "Image 3",
     },
   ];
 
   const imagesGroup4 = [
     {
-      src: "./image/acceptmission1.png",
+      src: "/image/acceptmission1.PNG",
       alt: "Image 4"
     },
   ]
 
   const imagesGroup5 = [
     {
-      src: "./image/doxy.png",
+      src: "/image/doxy.PNG",
       alt: "Image 5"
     },
   ]
 
   const imagesGroup6 = [
     {
-      src: "./image/mobility.png",
+      src: "/image/mobility.PNG",
       alt: "Image 6"
     },
   ]
