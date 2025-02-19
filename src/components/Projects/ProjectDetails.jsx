@@ -128,7 +128,7 @@ Skills: HTML/CSS,JavaScript,React.js,Node.js,Express.js,
       title: "Logiware",
       description:
         `This platform is designed to streamline international shipment management by integrating various logistics operations into a single, cohesive system.
-Skills: NestJs,Node.js,Nuxt.js,TypeScript, Quasar, Storyblok,and Amazon S3,`,
+Skills:NestJs,Node.js,Nuxt.js,TypeScript,Quasar,Storyblok,AmazonS3`,
     },
     {
       title: "Market Hero",

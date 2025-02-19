@@ -5,7 +5,7 @@ const Resume = () => {
   const contactInfo = [
     "james.zheng.dev217@gmail.com",
     "https://jameszhengportfolio.netlify.app",
-    "github.com/James-Zheng217",
+    "github.com/jameszheng217",
   ];
   const education = [
     {
@@ -82,10 +82,10 @@ const Resume = () => {
               building scalable and high-performance web applications. Skilled in React,
               Next.js, Svelte,Vue.js, Angular, Node.js, and GraphQL. Strong expertise in
               data integration and optimized database management, maximizing data
-              processing speed with MongoDB, MySQL, and PostgreSQL.Proficient in
+              processing speed with MongoDB, MySQL, and PostgreSQL. Proficient in
               Python, AWS and best practices such as TDD and Agile(SCRUM).
               I am adept at building secure, scalable, and innovative blockchain
-              applications across diverse ecosystems
+              applications across diverse ecosystems.
               </p>
               <ul>
                 {contactInfo.map((contact, index) => (
