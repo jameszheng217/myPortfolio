@@ -103,7 +103,7 @@ const Portfolio = () => {
             <div className="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
               <div className="portfolio-content h-100">
                 <img
-                  src="/image/CrewStudio.PNG"
+                  src="/image/hover.PNG"
                   className="img-fluid"
                   alt="Project 2"
                 />
@@ -111,7 +111,7 @@ const Portfolio = () => {
                   <h4>Project 2</h4>
                   <p>CrewStudio</p>
                   <a
-                    href="/image/CrewStudio.PNG"
+                    href="/image/hover.PNG"
                     title="Project 2"
                     data-gallery="portfolio-gallery-app"
                     className="glightbox preview-link"

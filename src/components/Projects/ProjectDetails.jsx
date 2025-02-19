@@ -50,7 +50,7 @@ const ProjectDetails = () => {
 
   const imagesGroup2 = [
     {
-      src: "/image/CrewStudio.PNG",
+      src: "/image/hover.PNG",
       alt: "Image 2",
     },
   ];
@@ -90,9 +90,9 @@ const ProjectDetails = () => {
       webUrl: "https://growcurriculum.org",
     },
     {
-      name: "Crew Studio",
+      name: "Logiware",
       category: "Website Project",
-      webUrl: "https://www.behance.net/gallery/128504717/Crewstudio-Marketing-CRM-Web-Application",
+      webUrl: "https://hoverlasoft.com/products-we-have-built/streamlining-international-shipment-management",
     },
     {
       name: "Market Hero",
@@ -125,11 +125,10 @@ Skills: HTML/CSS,JavaScript,React.js,Node.js,Express.js,
          MongoDB,AWS`
     },
     {
-      title: "CrewStudio",
+      title: "Logiware",
       description:
-        `This project showcases the design of a marketing Customer Relationship Management (CRM) web application named Crewstudio.
-Skills: HTML5/CSS3,JavaScript,React.js,Node.js,Express.js,
-        MongoDB,AWS,Figma,Adobe XD`,
+        `This platform is designed to streamline international shipment management by integrating various logistics operations into a single, cohesive system.
+Skills: NestJs,Node.js,Nuxt.js,TypeScript, Quasar, Storyblok,and Amazon S3,`,
     },
     {
       title: "Market Hero",
