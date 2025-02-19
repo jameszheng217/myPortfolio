@@ -109,7 +109,7 @@ const Portfolio = () => {
                 />
                 <div className="portfolio-info">
                   <h4>Project 2</h4>
-                  <p>CrewStudio</p>
+                  <p>Logiware</p>
                   <a
                     href="/image/hover.PNG"
                     title="Project 2"
